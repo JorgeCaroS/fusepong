@@ -19,7 +19,7 @@ export default function Login() {
         console.log(e)
        
         e.preventDefault();
-        fetch("http://localhost:3500/api/users/register", {
+        fetch("http://3.85.248.60:3500/api/users/register", {
           method: "post",
           mode: "cors",
           headers: {
@@ -57,7 +57,7 @@ export default function Login() {
          var thisError;
         var myUser = user;   
         try{  
-        const myFetch = await fetch("http://localhost:3500/api/users/login", {
+        const myFetch = await fetch("http://3.85.248.60:3500/api/users/login", {
            method: "post",
            mode: "cors",
            headers: {

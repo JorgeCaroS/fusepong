@@ -36,7 +36,7 @@ export default function Account() {
 
     async function fetchData() {
         
-        const result = await fetch("http://localhost:3500/api/empresas", {
+        const result = await fetch("http://3.85.248.60:3500/api/empresas", {
         method: "get",
         mode: "cors",
         headers: {
@@ -98,7 +98,7 @@ export default function Account() {
         console.log(user)
         console.log(empresaSelect)
         const res = await fetch(
-          "http://localhost:3500/api/users/update/" + user.mail,
+          "http://3.85.248.60:3500/api/users/update/" + user.mail,
           {
             method: "post",
             mode: "cors",
@@ -127,7 +127,7 @@ export default function Account() {
       async function agregarHistoria() {
         setLoading1(true)
         const res = await fetch(
-          "http://localhost:3500/api/empresas/agregar/" + user.empresa,
+          "http://3.85.248.60:3500/api/empresas/agregar/" + user.empresa,
           {
             method: "post",
             mode: "cors",
@@ -165,7 +165,7 @@ export default function Account() {
         setLoading1(true)
         
         const res = await fetch(
-          "http://localhost:3500/api/empresas/agregarTicket/" + user.empresa,
+          "http://3.85.248.60:3500/api/empresas/agregarTicket/" + user.empresa,
           {
             method: "post",
             mode: "cors",
@@ -274,7 +274,7 @@ export default function Account() {
 
         setLoading1(true)
           const res = await fetch(
-          "http://localhost:3500/api/empresas/editarTicket/",
+          "http://3.85.248.60:3500/api/empresas/editarTicket/",
           {
             method: "post",
             mode: "cors",
