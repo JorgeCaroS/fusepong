@@ -36,6 +36,10 @@ export default function Login() {
         }).then((response) => {         
           if (response.status === 201) {             
             console.log("Si")
+            alert("Registrado con Exito, ya puede Iniciar Sesión")
+            history.push({
+              pathname: `/cuenta`
+            })  
             }else{            
                 console.log("No")
             };
@@ -89,34 +93,41 @@ export default function Login() {
 
 
     return(
-        <div>
+        <div className="login-container">
             <h1>Login</h1>
             <div className="forms-container">
 
-        
-          <form className="register-form">
+        <div className="login-form">
+          <form className="login-form">
             <h1>Registrarse</h1>
             <span className="text">Correo</span>
             <input type="text" id="mail-register" ref={mailRef} />
             <span className="text">Contraseña</span>
             <input type="password" id="password-register" ref={passwordRef} />
+            <br></br>
+            
             <button className="register-button" onClick={handleReg}> <p> Registrarse </p> </button>
             <br></br>
             
           </form>
+          </div>
 
+          <div className="login-form">
           <form className="login-form">
             <h1>Login</h1>
             <span className="text">Correo</span>
             <input type="text" id="mail-login"ref={mail1Ref} />
             <span className="text">Contraseña</span>
             <input type="password" id="password-login" ref={password1Ref}/>
+            <br></br>
             <button className="login-button" onClick={handleLog}> <p> Iniciar Sesión  </p></button>
            
             <br></br>
             
             
           </form>
+          </div>
+
           
           <br></br>
           

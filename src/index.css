@@ -11,3 +11,249 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.account-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+
+.account-container img{
+ width: 100px;
+ border-radius: 50%;
+}
+
+.account-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;  
+  width: 90vw;
+}
+
+.account-projects{
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  background-color: white;
+  color: rgb(50, 89, 218);
+  justify-content: center;
+  align-items: center;
+}
+
+.single-project{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 20vw;
+  background-color: rgb(33, 87, 236);
+  color: white;
+  border-radius: 10px;
+}
+
+.single-project:hover{ 
+  background-color: rgb(20, 58, 161);
+  color: white;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.account-history{
+  display: flex;
+  position: absolute;
+  top:258px;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgb(73, 73, 221);
+}
+
+.account-history input, button, select{  
+  width: 10vw;  
+  background-color: white;
+}
+
+.close-history-button{
+  position: relative;
+  margin-top: 5vh;  
+  margin-bottom: 6vh;
+  right: 40vw;
+  height: 4vh;
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2vh;
+  border-radius: 20px;
+  
+}
+
+.close-create-history{
+  position: relative;
+  right: 40vw;
+  height: 4vh;
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2vh;
+  border-radius: 20px;
+}
+
+.create-history-button{
+  position: relative;
+  margin-top: -10vh;  
+  margin-bottom: 10vh;
+  left: 30vw;
+  height: 4vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2vh;
+  border-radius: 20px;
+}
+
+.add-history-button{
+  
+  
+  height: 4vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 2vh;
+  border-radius: 20px;
+}
+
+.single-history{
+  cursor: pointer;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  width: 20vw;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border:solid 2px white;
+}
+
+.single-history:hover{ 
+  
+  background-color: rgb(118, 118, 226);
+  color: white;
+  border:solid 2px white;
+  
+}
+
+.account-create-history{
+  display: flex;
+  position: absolute;
+  top:258px;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgb(131, 20, 182);
+  z-index: 1;
+}
+
+.account-tickets{
+  display: flex;
+  position: absolute;
+  top:258px;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 70vh;
+  flex-direction: column;  
+  background-color: rgb(75, 12, 190);
+}
+
+.single-ticket{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18vw;
+  background-color: white;
+  color: rgb(53, 53, 224);
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+
+}
+
+
+
+.account-create-ticket{
+
+  display: flex;
+  position: absolute;
+  top:258px;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgb(131, 20, 182);
+  z-index: 1;
+
+}
+
+#edit-icon{
+  position: relative;
+  top:-20px;
+  right: -150px;
+  cursor: pointer;
+}
+
+.edit-ticket{
+  display: flex;
+  position: absolute;
+  top:258px;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 70vh;
+  flex-direction: column;
+  background-color: rgb(46, 44, 44);
+  z-index: 1;
+}
+
+
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
