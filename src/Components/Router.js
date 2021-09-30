@@ -17,12 +17,10 @@ export default function Router() {
                     <React.Fragment>
                     
                     <Route exact path="/">
-                        <Redirect to="/inicio" />
+                        <Redirect to="/login" />
                     </Route>
 
-                    <Route exact path="/inicio">
-                        <Home  />
-                    </Route>
+                    
 
                   
 

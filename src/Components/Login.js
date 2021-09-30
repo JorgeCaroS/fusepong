@@ -1,6 +1,6 @@
 import React, {  useState,useContext, useEffect } from "react";
 import { useHistory} from "react-router-dom";
-
+import Logo from "../images/fusepong.png";
 import { MyContext } from "../Context/MyContext";
 
 export default function Login() {
@@ -94,6 +94,7 @@ export default function Login() {
 
     return(
         <div className="login-container">
+          <img src={Logo}/>
             <h1>Login</h1>
             <div className="forms-container">
 
